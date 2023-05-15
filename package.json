@@ -1,0 +1,25 @@
+{
+  "name": "oberon-07",
+  "displayName": "Oberon-07",
+  "description": "Oberon-07 Language Support for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "oberon07",
+      "aliases": ["Oberon-07", "oberon07"],
+      "extensions": [".Mod",".mod",".oberon"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "oberon07",
+      "scopeName": "source.oberon07",
+      "path": "./syntaxes/oberon07.tmLanguage.json"
+    }]
+  }
+}
