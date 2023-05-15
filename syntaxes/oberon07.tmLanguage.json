@@ -1,32 +1,87 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Oberon-07",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.oberon07",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.oberon07",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.oberon07",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.oberon07"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Oberon-07",
+  "patterns": [
+    { "include": "#constants" },
+    { "include": "#keywords" },
+    { "include": "#storages" },
+    { "include": "#types" },
+    { "include": "#strings" },
+    { "include": "#comments" }
+  ],
+  "repository": {
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.oberon07",
+          "match": "\\b(([0-9][0-9A-F]*[H])|([0-9]+[.][0-9]*([ED][+-]?[0-9]+)?)|([0-9]+))\\b"
+        },
+        {
+          "name": "constant.language.oberon07",
+          "match": "\\b(false|FALSE|nil|NIL|true|TRUE)\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.oberon07",
+          "match": "\\b(by|BY|case|CASE|do|DO|for|FOR|else|ELSE|elsif|ELSIF|if|IF|repeat|REPEAT|return|RETURN|then|THEN|to|TO|until|UNTIL|while|WHILE)\\b"
+        },
+        {
+          "name": "keyword.operator.oberon07",
+          "match": "\\b(is|IS|div|DIV|mod|MOD|or|OR|in|IN)\\b"
+        },
+        {
+          "name": "keyword.other.oberon07",
+          "match": "\\b(begin|BEGIN|const|CONST|end|END|import|IMPORT|module|MODULE|procedure|PROCEDURE|type|TYPE|var|VAR)\\b"
+        }
+      ]
+    },
+    "storages": {
+      "patterns": [
+        {
+          "name": "storage.type.oberon07",
+          "match": "\\b(array|ARRAY|pointer|POINTER|of|OF|record|RECORD)\\b"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "support.type.oberon07",
+          "match": "\\b(boolean|BOOLEAN|byte|BYTE|char|CHAR|integer|INTEGER|real|REAL|set|SET)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.oberon07",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.oberon07",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.other.oberon07",
+          "match": "\\b([0-9][0-9A-F]+[X])\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.oberon07",
+          "begin": "\\(\\*",
+          "end": "\\*\\)"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.oberon07"
 }
