@@ -3,8 +3,16 @@
   "displayName": "Oberon-07",
   "description": "Oberon-07 Language Support for Visual Studio Code",
   "version": "0.0.1",
+  "publisher": "lang_support",
+  "author": {
+    "name": "Raul Costa Junior",
+    "email": "raulcostajunior@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/raulcostajunior/oberon-07"
+  },
   "engines": {
-    "vscode": "^1.78.0"
+    "vscode": "^1.70.0"
   },
   "categories": [
     "Programming Languages"

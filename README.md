@@ -7,22 +7,20 @@ Further information on the Oberon and Oberon-07 languages can be found at https:
 
 ## Features
 
-To be added.
+Syntax-hightlighting for Oberon-07 - registered for `*.Mod`, `*.mod`, and `*.oberon` files.
 
 ## Requirements
 
-To be added.
+Visual Studio Code version 1.70+. Actually this is what is in the extension manifest (should work with much older versions as well).
 
 ## Extension Settings
 
-To be added.
-
-## Known Issues
-
-To be added.
+No setting for now.
 
 ## Release Notes
 
-To be added.
+Publishing initial version, **0.0.1**, with syntax-highlighting support for the Oberon-07 language tokens.
+
+Supports all uppercase keywords as in the language specification and also their all lowercase equivalents (seen lots of complains about the all uppercase approach of the language).
 
 ---

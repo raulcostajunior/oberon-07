@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "oberon-07" extension will be documented in this file.
+## 0.0.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- Initial release - adds syntax-highlightning capabilites for Oberon-07 to Visual Studio Code. Handles `*.mod`, `*.Mod`, and `*.oberon` files and supports both all uppercase and all lowercase versions of the language keywords.
