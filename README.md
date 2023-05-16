@@ -19,8 +19,8 @@ No setting for now.
 
 ## Release Notes
 
-Publishing initial version, **0.0.1**, with syntax-highlighting support for the Oberon-07 language tokens.
+Initial version, **0.0.1**, with syntax-highlighting support for the Oberon-07 language tokens.
 
-Supports all uppercase keywords as in the language specification and also their all lowercase equivalents (seen lots of complains about the all uppercase approach of the language).
+Supports all-uppercase keywords as in the language specification and also their all-lowercase equivalents (the all-uppercase keywords is not liked by many people, myself included).
 
 ---
